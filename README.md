@@ -99,3 +99,23 @@ urbanSight-ai/
 ├── server.js
 ├── .gitignore
 └── README.md
+
+🛠️ Technology Stack
+Current
+React
+JavaScript
+Vite
+HTML5
+CSS
+Git & GitHub
+Planned
+Node.js
+Express.js
+PostgreSQL / MongoDB
+REST APIs
+Authentication
+AI/ML models
+Real-time data processing
+WebSockets
+GIS / Maps APIs
+Cloud deployment
