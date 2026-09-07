@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-tint": "#b4c5ff",
+          "inverse-on-surface": "#2e3132",
+          "surface-variant": "#323536",
+          "on-secondary-fixed-variant": "#3f465f",
+          "on-tertiary-container": "#eaf1ff",
+          "error": "#ffb4ab",
+          "secondary": "#bfc5e4",
+          "outline-variant": "#434655",
+          "surface-bright": "#373a3b",
+          "tertiary-container": "#646e7e",
+          "secondary-container": "#424862",
+          "on-primary-fixed-variant": "#003ea8",
+          "tertiary-fixed": "#d9e3f6",
+          "outline": "#8d90a0",
+          "on-tertiary-fixed": "#121c2a",
+          "surface-container-highest": "#323536",
+          "surface-container-lowest": "#0c0f10",
+          "on-surface-variant": "#c3c6d7",
+          "on-primary-fixed": "#00174b",
+          "inverse-surface": "#e1e3e4",
+          "surface-container-low": "#191c1d",
+          "tertiary": "#bdc7d9",
+          "on-secondary-fixed": "#141a32",
+          "secondary-fixed": "#dce1ff",
+          "surface-container": "#1d2021",
+          "primary-fixed": "#dbe1ff",
+          "primary-fixed-dim": "#b4c5ff",
+          "on-tertiary": "#27313f",
+          "on-error": "#690005",
+          "tertiary-fixed-dim": "#bdc7d9",
+          "on-surface": "#e1e3e4",
+          "on-error-container": "#ffdad6",
+          "surface": "#111415",
+          "on-tertiary-fixed-variant": "#3d4756",
+          "background": "#111415",
+          "error-container": "#93000a",
+          "on-secondary-container": "#b1b7d6",
+          "surface-container-high": "#282a2b",
+          "primary": "#b4c5ff",
+          "on-primary": "#002a78",
+          "secondary-fixed-dim": "#bfc5e4",
+          "on-primary-container": "#eeefff",
+          "surface-dim": "#111415",
+          "on-secondary": "#292f48",
+          "on-background": "#e1e3e4",
+          "inverse-primary": "#0053db",
+          "primary-container": "#2563eb"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-4": "0.5rem",
+          "grid-columns": "12",
+          "space-24": "3rem",
+          "space-2": "0.25rem",
+          "space-16": "2rem",
+          "space-6": "0.75rem",
+          "space-12": "1.5rem",
+          "gutter-default": "1rem",
+          "margin-default": "1.5rem",
+          "space-8": "1rem"
+        },
+        "fontFamily": {
+          "body-lg": ["Inter"],
+          "headline-lg": ["Inter"],
+          "body-sm": ["Inter"],
+          "body-md": ["Inter"],
+          "label-sm": ["JetBrains Mono"],
+          "label-md": ["JetBrains Mono"],
+          "headline-xl-mobile": ["Inter"],
+          "headline-md": ["Inter"],
+          "headline-sm": ["Inter"],
+          "label-lg": ["JetBrains Mono"],
+          "headline-xl": ["Inter"]
+        },
+        "fontSize": {
+          "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "label-lg": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-xl": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-space-margin-default flex items-center justify-between"><div class="flex items-center gap-space-8"><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center shadow-[0_0_12px_rgba(37,99,235,0.4)]"><span class="material-symbols-outlined text-on-primary-container text-[18px]">radar</span></div><span class="text-headline-sm font-headline-sm tracking-tight text-on-surface">URBANSIGHT <span class="text-primary">AI</span></span></div><div class="flex items-center gap-space-4"><div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">notifications</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-space-margin-default pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full gap-space-16 pb-safe">
+<!-- AI Status Banner -->
+<div class="flex items-center justify-between p-space-12 bg-surface-container rounded-xl shadow-sm">
+<div class="flex items-center gap-space-8">
+<div class="relative flex items-center justify-center w-8 h-8 rounded-full bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+<span class="absolute top-0 right-0 w-2 h-2 rounded-full bg-primary animate-ping"></span>
+</div>
+<div>
+<div class="flex items-center gap-space-4">
+<span class="text-headline-sm font-headline-sm text-on-surface">BUS-204</span>
+<span class="px-space-4 py-0.5 rounded-full bg-surface-variant text-on-surface-variant text-label-sm font-label-sm">Route 12</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Edge AI Node Active</p>
+</div>
+</div>
+<div class="flex items-center gap-space-4 px-space-8 py-1.5 bg-surface-container-high rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-label-md font-label-md text-primary">ONLINE</span>
+</div>
+</div>
+<!-- Camera Switching Bar -->
+<div class="grid grid-cols-4 gap-space-8">
+<button class="flex flex-col items-center justify-center py-2.5 bg-primary text-on-primary rounded-xl font-label-md text-label-md transition-all shadow-sm" id="btn-front" onclick="switchCamera('front')">
+<span class="material-symbols-outlined text-[18px] mb-1">videocam</span>
+      Front
+    </button>
+<button class="flex flex-col items-center justify-center py-2.5 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md transition-all" id="btn-rear" onclick="switchCamera('rear')">
+<span class="material-symbols-outlined text-[18px] mb-1">camera_rear</span>
+      Rear
+    </button>
+<button class="flex flex-col items-center justify-center py-2.5 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md transition-all" id="btn-left" onclick="switchCamera('left')">
+<span class="material-symbols-outlined text-[18px] mb-1">left_click</span>
+      Left
+    </button>
+<button class="flex flex-col items-center justify-center py-2.5 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md transition-all" id="btn-right" onclick="switchCamera('right')">
+<span class="material-symbols-outlined text-[18px] mb-1">right_click</span>
+      Right
+    </button>
+</div>
+<!-- Main Camera Feed Preview with YOLOv8 Bounding Boxes -->
+<div class="relative w-full h-72 rounded-xl overflow-hidden bg-surface-container-lowest shadow-md">
+<!-- Camera Feed Placeholder -->
+<div class="absolute inset-0 bg-cover bg-center opacity-80" data-alt="A live interior/exterior street view from a city bus dashboard camera showing urban traffic, pedestrians crossing the road, and road conditions in a high-tech command center dark mode style with deep blues and crisp overlays." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUHKeLk3OQUjeGNewhMV7_W-adI6EI_3Yi8NzHikjClJZ-rLwXZ-7d8gyf89Dk_AkTDnI42abN-ROjQJer2-ywr2NxynR66_6UuNg60I-PUJSmCSkprnK-5XwBU4MQWS9D6jEutuEChGua4TqkJIYPcCd1j5iDEDOue3fZkTqsizvxXJ8mmNB0ET_7oBM4cR_2LN3HfUANprLaDZK7uKP4BafQdrvtqNZyuCIWCB7d82PyLgKnqKlA8Q')"></div>
+<!-- Gradient Overlay for Contrast -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-surface-container-lowest/30"></div>
+<!-- Live Indicator & Camera Tag -->
+<div class="absolute top-3 left-3 flex items-center gap-space-4 px-2.5 py-1 bg-surface-container/90 backdrop-blur-md rounded-full text-label-sm font-label-sm text-on-surface shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span id="cam-label">CAM 01: FRONT VIEW</span>
+</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 bg-surface-container/90 backdrop-blur-md rounded-full text-label-sm font-label-sm text-primary shadow-sm font-mono">
+      YOLOv8n-seg
+    </div>
+<!-- YOLOv8 Bounding Boxes (Simulated Overlay) -->
+<!-- Car 94% -->
+<div class="absolute top-24 left-16 w-28 h-20 border-2 border-primary rounded bg-primary/10 flex flex-col justify-between p-1 shadow-lg animate-pulse">
+<span class="self-start px-1 bg-primary text-on-primary text-[10px] font-mono rounded">Car 94%</span>
+</div>
+<!-- Pedestrian 91% -->
+<div class="absolute top-20 right-20 w-14 h-32 border-2 border-secondary rounded bg-secondary/10 flex flex-col justify-between p-1 shadow-lg">
+<span class="self-start px-1 bg-secondary text-on-secondary text-[10px] font-mono rounded">Ped 91%</span>
+</div>
+<!-- Pothole 96% -->
+<div class="absolute bottom-10 left-28 w-20 h-12 border-2 border-error rounded bg-error/10 flex flex-col justify-between p-1 shadow-lg">
+<span class="self-start px-1 bg-error text-on-error text-[10px] font-mono rounded">Pothole 96%</span>
+</div>
+<!-- Feed Controls Footer inside Frame -->
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between px-3 py-2 bg-surface-container/90 backdrop-blur-md rounded-lg text-label-sm font-label-sm text-on-surface">
+<div class="flex items-center gap-space-6">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">videocam</span> 1080p 30fps</span>
+<span class="flex items-center gap-1 text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">bolt</span> ON-EDGE</span>
+</div>
+<span class="text-on-surface-variant font-mono">ID: 0x89F2</span>
+</div>
+</div>
+<!-- Edge AI Status Stats Grid -->
+<div class="grid grid-cols-3 gap-space-8">
+<div class="flex flex-col p-space-8 bg-surface-container rounded-xl shadow-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-1">FPS</span>
+<span class="text-headline-md font-headline-md text-primary font-mono">28</span>
+</div>
+<div class="flex flex-col p-space-8 bg-surface-container rounded-xl shadow-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-1">INFERENCE</span>
+<span class="text-headline-md font-headline-md text-on-surface font-mono">42 <span class="text-body-sm">ms</span></span>
+</div>
+<div class="flex flex-col p-space-8 bg-surface-container rounded-xl shadow-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-1">CPU LOAD</span>
+<span class="text-headline-md font-headline-md text-secondary font-mono">62%</span>
+</div>
+<div class="flex flex-col p-space-8 bg-surface-container rounded-xl shadow-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-1">GPU LOAD</span>
+<span class="text-headline-md font-headline-md text-primary font-mono">71%</span>
+</div>
+<div class="flex flex-col p-space-8 bg-surface-container rounded-xl shadow-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-1">NETWORK</span>
+<span class="text-headline-md font-headline-md text-on-surface font-mono">18 <span class="text-body-sm">KB/s</span></span>
+</div>
+<div class="flex flex-col p-space-8 bg-surface-container rounded-xl shadow-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-1">EVENTS</span>
+<span class="text-headline-md font-headline-md text-error font-mono">23</span>
+</div>
+</div>
+<!-- Status Notice -->
+<div class="flex items-start gap-space-8 p-space-12 bg-surface-container rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified_user</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+      AI processing is running locally on the bus. Only event metadata and compressed evidence are transmitted.
+    </p>
+</div>
+</div>
+<script>
+  function switchCamera(angle) {
+    const cams = ['front', 'rear', 'left', 'right'];
+    cams.forEach(c => {
+      const btn = document.getElementById('btn-' + c);
+      if (c === angle) {
+        btn.className = "flex flex-col items-center justify-center py-2.5 bg-primary text-on-primary rounded-xl font-label-md text-label-md transition-all shadow-sm";
+      } else {
+        btn.className = "flex flex-col items-center justify-center py-2.5 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md transition-all";
+      }
+    });
+    document.getElementById('cam-label').innerText = 'CAM 01: ' + angle.toUpperCase() + ' VIEW';
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl" data-active-classes="text-primary"><div class="flex justify-around items-center h-20 px-space-gutter-default"><a class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="text-label-sm font-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="live-map" href="#"><span class="material-symbols-outlined text-[24px]">map</span><span class="text-label-sm font-label-sm">Live Map</span></a><a class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="alerts" href="#"><span class="material-symbols-outlined text-[24px]">warning</span><span class="text-label-sm font-label-sm">Alerts</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 transition-all text-primary" data-path="fleet" href="#"><span class="material-symbols-outlined text-[24px]">local_shipping</span><span class="text-label-sm font-label-sm">Fleet</span></a><a class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="text-label-sm font-label-sm">Profile</span></a></div></nav></body></html>

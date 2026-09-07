@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-tint": "#b4c5ff",
+          "inverse-on-surface": "#2e3132",
+          "surface-variant": "#323536",
+          "on-secondary-fixed-variant": "#3f465f",
+          "on-tertiary-container": "#eaf1ff",
+          "error": "#ffb4ab",
+          "secondary": "#bfc5e4",
+          "outline-variant": "#434655",
+          "surface-bright": "#373a3b",
+          "tertiary-container": "#646e7e",
+          "secondary-container": "#424862",
+          "on-primary-fixed-variant": "#003ea8",
+          "tertiary-fixed": "#d9e3f6",
+          "outline": "#8d90a0",
+          "on-tertiary-fixed": "#121c2a",
+          "surface-container-highest": "#323536",
+          "surface-container-lowest": "#0c0f10",
+          "on-surface-variant": "#c3c6d7",
+          "on-primary-fixed": "#00174b",
+          "inverse-surface": "#e1e3e4",
+          "surface-container-low": "#191c1d",
+          "tertiary": "#bdc7d9",
+          "on-secondary-fixed": "#141a32",
+          "secondary-fixed": "#dce1ff",
+          "surface-container": "#1d2021",
+          "primary-fixed": "#dbe1ff",
+          "primary-fixed-dim": "#b4c5ff",
+          "on-tertiary": "#27313f",
+          "on-error": "#690005",
+          "tertiary-fixed-dim": "#bdc7d9",
+          "on-surface": "#e1e3e4",
+          "on-error-container": "#ffdad6",
+          "surface": "#111415",
+          "on-tertiary-fixed-variant": "#3d4756",
+          "background": "#111415",
+          "error-container": "#93000a",
+          "on-secondary-container": "#b1b7d6",
+          "surface-container-high": "#282a2b",
+          "primary": "#b4c5ff",
+          "on-primary": "#002a78",
+          "secondary-fixed-dim": "#bfc5e4",
+          "on-primary-container": "#eeefff",
+          "surface-dim": "#111415",
+          "on-secondary": "#292f48",
+          "on-background": "#e1e3e4",
+          "inverse-primary": "#0053db",
+          "primary-container": "#2563eb"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-4": "0.5rem",
+          "grid-columns": "12",
+          "space-24": "3rem",
+          "space-2": "0.25rem",
+          "space-16": "2rem",
+          "space-6": "0.75rem",
+          "space-12": "1.5rem",
+          "gutter-default": "1rem",
+          "margin-default": "1.5rem",
+          "space-8": "1rem"
+        },
+        "fontFamily": {
+          "body-lg": ["Inter"],
+          "headline-lg": ["Inter"],
+          "body-sm": ["Inter"],
+          "body-md": ["Inter"],
+          "label-sm": ["JetBrains Mono"],
+          "label-md": ["JetBrains Mono"],
+          "headline-xl-mobile": ["Inter"],
+          "headline-md": ["Inter"],
+          "headline-sm": ["Inter"],
+          "label-lg": ["JetBrains Mono"],
+          "headline-xl": ["Inter"]
+        },
+        "fontSize": {
+          "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "label-lg": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-xl": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-space-margin-default flex items-center justify-between"><div class="flex items-center gap-space-8"><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center shadow-[0_0_12px_rgba(37,99,235,0.4)]"><span class="material-symbols-outlined text-on-primary-container text-[18px]">radar</span></div><span class="text-headline-sm font-headline-sm tracking-tight text-on-surface">URBANSIGHT <span class="text-primary">AI</span></span></div><div class="flex items-center gap-space-4"><div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">notifications</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-space-margin-default pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full pb-space-24">
+<!-- KPI Summary Banner -->
+<div class="grid grid-cols-3 gap-space-4 mb-space-16">
+<div class="bg-surface-container p-space-4 rounded-xl flex flex-col items-center justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">ACTIVE</span>
+<span class="text-headline-lg font-headline-lg text-primary mt-space-2">128</span>
+<div class="w-full bg-surface-variant h-1 rounded-full mt-space-2 overflow-hidden">
+<div class="bg-primary h-full w-[90%]"></div>
+</div>
+</div>
+<div class="bg-surface-container p-space-4 rounded-xl flex flex-col items-center justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">OFFLINE</span>
+<span class="text-headline-lg font-headline-lg text-on-surface-variant mt-space-2">5</span>
+<div class="w-full bg-surface-variant h-1 rounded-full mt-space-2 overflow-hidden">
+<div class="bg-outline h-full w-[10%]"></div>
+</div>
+</div>
+<div class="bg-surface-container p-space-4 rounded-xl flex flex-col items-center justify-center">
+<span class="text-label-sm font-label-sm text-error">ALERTS</span>
+<span class="text-headline-lg font-headline-lg text-error mt-space-2">12</span>
+<div class="w-full bg-surface-variant h-1 rounded-full mt-space-2 overflow-hidden">
+<div class="bg-error h-full w-[35%]"></div>
+</div>
+</div>
+</div>
+<!-- Mini Map Section -->
+<div class="bg-surface-container rounded-xl p-space-4 mb-space-16 relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-4">
+<div class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-primary text-[18px]">radar</span>
+<span class="text-headline-sm font-headline-sm text-on-surface">Live Fleet Map</span>
+</div>
+<span class="px-space-2 py-0.5 bg-primary-container text-on-primary-container text-label-sm font-label-sm rounded-full animate-pulse">GPS ACTIVE</span>
+</div>
+<div class="w-full h-48 rounded-lg bg-cover bg-center relative" data-alt="A detailed satellite overview map of a modern smart city grid at night, featuring glowing neon blue and purple traffic telemetry lines, bus route pins, and live pulsing spatial markers over dark urban topography." data-location="Metropolitan City Center" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')">
+<!-- Simulated Map Pins -->
+<div class="absolute top-1/3 left-1/4 w-3 h-3 bg-primary rounded-full animate-ping"></div>
+<div class="absolute top-1/3 left-1/4 w-3 h-3 bg-primary rounded-full flex items-center justify-center shadow-[0_0_8px_rgba(180,197,255,0.8)]">
+<span class="text-[8px] font-label-sm text-on-primary font-bold">204</span>
+</div>
+<div class="absolute bottom-1/3 right-1/3 w-3 h-3 bg-tertiary rounded-full flex items-center justify-center">
+<span class="text-[8px] font-label-sm text-on-tertiary font-bold">109</span>
+</div>
+</div>
+</div>
+<!-- Fleet Search & Filter -->
+<div class="flex items-center gap-space-4 mb-space-4">
+<div class="flex-grow bg-surface-container rounded-lg px-space-4 py-space-2 flex items-center gap-space-2">
+<span class="material-symbols-outlined text-outline text-[18px]">search</span>
+<input class="bg-transparent text-on-surface text-body-md outline-none w-full placeholder:text-outline" placeholder="Search bus ID, route..." type="text"/>
+</div>
+<button class="bg-surface-container px-space-4 py-space-2 rounded-lg flex items-center gap-space-2 text-on-surface text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+      Filter
+    </button>
+</div>
+<!-- Bus Cards Stream -->
+<div class="flex flex-col gap-space-4">
+<!-- Bus Card 204 (Active Incident) -->
+<div class="bg-surface-container rounded-xl p-space-4 cursor-pointer hover:bg-surface-container-high transition-all relative overflow-hidden" onclick="openBusDetails('BUS-204')">
+<div class="absolute top-0 right-0 w-2 h-full bg-error"></div>
+<div class="flex items-start justify-between mb-space-4">
+<div class="flex items-center gap-space-3">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center font-headline-sm text-headline-sm">
+            204
+          </div>
+<div>
+<div class="flex items-center gap-space-2">
+<span class="text-headline-sm font-headline-sm text-on-surface">BUS-204</span>
+<span class="px-space-2 py-0.5 bg-primary-container text-on-primary-container text-label-sm font-label-sm rounded-full">Route 12</span>
+</div>
+<span class="text-body-sm text-on-surface-variant">Edge AI Unit #882</span>
+</div>
+</div>
+<div class="flex items-center gap-space-1 bg-surface-container-highest px-space-2 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-primary">Online</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-2 mb-space-4 bg-surface rounded-lg p-space-3">
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">SPEED</span>
+<span class="text-body-md font-headline-sm text-on-surface">32 km/h</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">AI ENGINE</span>
+<span class="text-body-md font-headline-sm text-primary">Active</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">CAMERAS</span>
+<span class="text-body-md font-headline-sm text-on-surface">4 / 4</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-error-container/20 p-space-3 rounded-lg">
+<div class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-error font-bold">LAST EVENT</span>
+<span class="text-body-sm text-on-error-container">Pothole detected at Sector 4</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-error-container text-[18px]">chevron_right</span>
+</div>
+</div>
+<!-- Bus Card 109 (Normal) -->
+<div class="bg-surface-container rounded-xl p-space-4 cursor-pointer hover:bg-surface-container-high transition-all" onclick="openBusDetails('BUS-109')">
+<div class="flex items-start justify-between mb-space-4">
+<div class="flex items-center gap-space-3">
+<div class="w-10 h-10 rounded-lg bg-surface-variant text-on-surface flex items-center justify-center font-headline-sm text-headline-sm">
+            109
+          </div>
+<div>
+<div class="flex items-center gap-space-2">
+<span class="text-headline-sm font-headline-sm text-on-surface">BUS-109</span>
+<span class="px-space-2 py-0.5 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm rounded-full">Route 7</span>
+</div>
+<span class="text-body-sm text-on-surface-variant">Edge AI Unit #412</span>
+</div>
+</div>
+<div class="flex items-center gap-space-1 bg-surface-container-highest px-space-2 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-primary">Online</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-2 bg-surface rounded-lg p-space-3">
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">SPEED</span>
+<span class="text-body-md font-headline-sm text-on-surface">28 km/h</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">AI ENGINE</span>
+<span class="text-body-md font-headline-sm text-primary">Active</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">CAMERAS</span>
+<span class="text-body-md font-headline-sm text-on-surface">4 / 4</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bus Details Slide-over / Modal simulation container -->
+<div class="fixed inset-0 z-50 bg-surface/90 backdrop-blur-xl flex flex-col p-space-margin-default pt-16 pb-24 overflow-y-auto hidden" id="bus-modal">
+<div class="flex items-center justify-between mb-space-6">
+<div class="flex items-center gap-space-3">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center font-headline-lg text-headline-lg" id="modal-bus-id">204</div>
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface" id="modal-bus-title">BUS-204 Details</h2>
+<span class="text-body-sm text-primary font-label-sm">Edge AI Diagnostic Terminal</span>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface" onclick="closeBusDetails()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Live Camera Feed Simulation -->
+<div class="bg-surface-container rounded-xl p-space-4 mb-space-6 relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-3">
+<span class="text-label-md font-label-md text-on-surface flex items-center gap-space-2">
+<span class="material-symbols-outlined text-primary text-[18px]">videocam</span>
+          CAM-01 (Forward Road View)
+        </span>
+<span class="px-space-2 py-0.5 bg-error-container text-on-error-container text-label-sm font-label-sm rounded-full">LIVE REC</span>
+</div>
+<div class="w-full h-56 rounded-lg bg-cover bg-center relative" data-alt="A live intelligent transport system camera view from a city bus windshield, showing an urban street with bounding boxes highlighting road anomalies, pedestrians, and vehicles under crisp modern command center graphic overlays." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbPYv_0eyJi5bsSjDlCsRhnWCTLbfKzcLy3h3IXHBspyr6fUN9gctZY3YXDiQKMci2lUtYx3YboYJZ4mW0nA2zILE4qwnjQ6dFDF4NP9JGsATdCO9Jtqa3y8XuwmAMXirplGfvCJKbPpLJ8TOOUd5CCq-KliknL436y0rPJaFPknEbFXPkJjMawWjgls0eDlDZHiuLYw-w6NBEOsx1IaVOGBUSw8JGA6eL8KP5iyZ3SKTIciks0xZy1A')">
+<div class="absolute inset-0 border border-error/50 m-4 rounded pointer-events-none flex items-start justify-end p-2">
+<span class="bg-error text-on-error text-label-sm px-2 py-0.5 rounded">Pothole 98% Conf</span>
+</div>
+</div>
+</div>
+<!-- Edge AI Telemetry Stats -->
+<div class="grid grid-cols-2 gap-space-4 mb-space-6">
+<div class="bg-surface-container p-space-4 rounded-xl flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">CPU LOAD</span>
+<span class="text-headline-md font-headline-md text-on-surface mt-space-2">42%</span>
+<div class="w-full bg-surface-variant h-1 rounded-full mt-space-2">
+<div class="bg-primary h-full w-[42%]"></div>
+</div>
+</div>
+<div class="bg-surface-container p-space-4 rounded-xl flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">NPU INFERENCE</span>
+<span class="text-headline-md font-headline-md text-primary mt-space-2">1.2ms</span>
+<div class="w-full bg-surface-variant h-1 rounded-full mt-space-2">
+<div class="bg-primary h-full w-[80%]"></div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex gap-space-4">
+<button class="flex-grow bg-primary text-on-primary py-space-4 rounded-xl font-headline-sm text-headline-sm flex items-center justify-center gap-space-2">
+<span class="material-symbols-outlined">restart_alt</span>
+        Reboot Edge Unit
+      </button>
+<button class="bg-surface-container text-on-surface px-space-6 py-space-4 rounded-xl font-headline-sm text-headline-sm">
+        Logs
+      </button>
+</div>
+</div>
+<script>
+    function openBusDetails(busId) {
+      const modal = document.getElementById('bus-modal');
+      const title = document.getElementById('modal-bus-title');
+      const badge = document.getElementById('modal-bus-id');
+      
+      title.innerText = busId + ' Details';
+      badge.innerText = busId.replace('BUS-', '');
+      modal.classList.remove('hidden');
+    }
+
+    function closeBusDetails() {
+      const modal = document.getElementById('bus-modal');
+      modal.classList.add('hidden');
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl" data-active-classes="text-primary"><div class="flex justify-around items-center h-20 px-space-gutter-default"><a class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="text-label-sm font-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="live-map" href="#"><span class="material-symbols-outlined text-[24px]">map</span><span class="text-label-sm font-label-sm">Live Map</span></a><a class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="alerts" href="#"><span class="material-symbols-outlined text-[24px]">warning</span><span class="text-label-sm font-label-sm">Alerts</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 transition-all text-primary" data-path="fleet" href="#"><span class="material-symbols-outlined text-[24px]">local_shipping</span><span class="text-label-sm font-label-sm">Fleet</span></a><a class="flex flex-col items-center justify-center gap-space-2 w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="text-label-sm font-label-sm">Profile</span></a></div></nav></body></html>

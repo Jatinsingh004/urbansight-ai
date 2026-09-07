@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#111415;color:#e1e3e4;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: { extend: { colors: { "surface-container-high": "#282a2b", "on-error": "#690005", "on-primary-container": "#eeefff", "surface-bright": "#373a3b", "tertiary": "#bdc7d9", "on-tertiary-fixed": "#121c2a", "surface-variant": "#323536", "on-primary-fixed": "#00174b", "surface-tint": "#b4c5ff", "primary-container": "#2563eb", "error": "#ffb4ab", "secondary": "#bfc5e4", "inverse-primary": "#0053db", "surface-container-low": "#191c1d", "on-tertiary-fixed-variant": "#3d4756", "primary": "#b4c5ff", "secondary-fixed": "#dce1ff", "surface-container-highest": "#323536", "on-error-container": "#ffdad6", "surface-dim": "#111415", "on-secondary": "#292f48", "primary-fixed-dim": "#b4c5ff", "surface-container": "#1d2021", "on-tertiary-container": "#eaf1ff", "background": "#111415", "outline": "#8d90a0", "on-secondary-container": "#b1b7d6", "error-container": "#93000a", "on-surface-variant": "#c3c6d7", "secondary-container": "#424862", "surface": "#111415", "secondary-fixed-dim": "#bfc5e4", "on-tertiary": "#27313f", "surface-container-lowest": "#0c0f10", "on-secondary-fixed": "#141a32", "inverse-on-surface": "#2e3132", "tertiary-fixed-dim": "#bdc7d9", "on-primary-fixed-variant": "#003ea8", "on-surface": "#e1e3e4", "on-primary": "#002a78", "tertiary-fixed": "#d9e3f6", "inverse-surface": "#e1e3e4", "outline-variant": "#434655", "tertiary-container": "#646e7e", "primary-fixed": "#dbe1ff", "on-secondary-fixed-variant": "#3f465f", "on-background": "#e1e3e4" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { "space-24": "3rem", "space-16": "2rem", "space-4": "0.5rem", "space-12": "1.5rem", "grid-columns": "12", "space-6": "0.75rem", "space-2": "0.25rem", "gutter-default": "1rem", "margin-default": "1.5rem", "space-8": "1rem" }, fontFamily: { "body-md": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Inter"], "headline-xl": ["Inter"], "label-lg": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "headline-md": ["Inter"], "headline-xl-mobile": ["Inter"] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-space-gutter-default flex items-center justify-between"><div class="flex items-center gap-space-2"><button class="w-12 h-12 flex items-center justify-center text-on-surface" onclick="history.back()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button><h1 class="text-headline-sm font-headline-sm uppercase text-on-surface">Traffic Analytics</h1></div><div class="flex items-center gap-space-4"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-space-margin-default pt-16 pb-space-24 bg-surface flex-1"><div class="flex flex-col w-full gap-space-16 pb-space-24">
+<!-- Top Telemetry Header / Status Ticker -->
+<div class="flex flex-col gap-space-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-outline tracking-wider uppercase">Live Command Stream // Sector 7-G</span>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container-high px-space-2 py-0.5 rounded text-primary">UTC 17:42:09</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Traffic Telemetry &amp; Analytics</h2>
+</div>
+<!-- AI Insight Alert Card (High Delight/Character) -->
+<div class="relative bg-surface-container rounded-xl p-space-12 shadow-md overflow-hidden flex flex-col gap-space-6">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-4">
+<div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<div>
+<span class="text-label-md font-label-md text-primary uppercase tracking-wide">UrbanSight AI Advisory</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Congestion Vector Warning</h3>
+</div>
+</div>
+<span class="bg-error-container text-on-error-container text-label-sm font-label-sm px-space-3 py-1 rounded-full flex items-center gap-space-2">
+<span class="material-symbols-outlined text-[14px]">warning</span> Priority 1
+      </span>
+</div>
+<p class="text-body-md text-on-surface-variant leading-relaxed">
+      Traffic congestion on Ring Road increased <span class="text-primary font-headline-sm">24%</span> between 5 PM and 7 PM. Route 12 is experiencing an estimated <span class="text-error font-headline-sm">11-minute delay</span>.
+    </p>
+<div class="flex items-center justify-between pt-space-2">
+<div class="flex items-center gap-space-2 text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px]">bolt</span> Automated signal sync recommended
+      </div>
+<button class="bg-primary hover:bg-surface-tint text-on-primary text-label-md font-label-md px-space-4 py-space-2 rounded transition-all flex items-center gap-space-2 shadow-sm active:scale-95" onclick="triggerSignalSync(this)">
+<span class="material-symbols-outlined text-[16px]">settings_ethernet</span> Apply Sync
+      </button>
+</div>
+</div>
+<!-- KPI Grid -->
+<div class="grid grid-cols-2 gap-space-4">
+<!-- KPI 1 -->
+<div class="bg-surface-container rounded-xl p-space-8 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-outline">
+<span class="text-label-md font-label-md">Vehicles Today</span>
+<span class="material-symbols-outlined text-[18px] text-primary">directions_car</span>
+</div>
+<div class="mt-space-4">
+<div class="text-headline-lg font-headline-lg text-on-surface">1.42M</div>
+<div class="flex items-center gap-space-1 text-label-sm text-primary mt-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12.4% vs avg
+        </div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container rounded-xl p-space-8 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-outline">
+<span class="text-label-md font-label-md">Avg Density</span>
+<span class="material-symbols-outlined text-[18px] text-error">traffic</span>
+</div>
+<div class="mt-space-4">
+<div class="text-headline-lg font-headline-lg text-error">78%</div>
+<div class="flex items-center gap-space-1 text-label-sm text-error mt-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Heavy Load
+        </div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container rounded-xl p-space-8 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-outline">
+<span class="text-label-md font-label-md">Congestion Zones</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">domain_disabled</span>
+</div>
+<div class="mt-space-4">
+<div class="text-headline-lg font-headline-lg text-on-surface">14</div>
+<div class="flex items-center gap-space-1 text-label-sm text-secondary mt-1">
+<span class="material-symbols-outlined text-[14px]">horizontal_rule</span> Stable
+        </div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container rounded-xl p-space-8 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-outline">
+<span class="text-label-md font-label-md">Route Delay</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">schedule</span>
+</div>
+<div class="mt-space-4">
+<div class="text-headline-lg font-headline-lg text-on-surface">8.5 m</div>
+<div class="flex items-center gap-space-1 text-label-sm text-tertiary mt-1">
+<span class="material-symbols-outlined text-[14px]">trending_down</span> -1.2m
+        </div>
+</div>
+</div>
+</div>
+<!-- Traffic Density Over Time Graph Card -->
+<div class="bg-surface-container rounded-xl p-space-12 shadow-sm flex flex-col gap-space-6">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Density Over Time</h3>
+<span class="text-label-sm font-label-sm text-outline">24-hour urban telemetry stream</span>
+</div>
+<div class="flex items-center gap-space-2 bg-surface-variant px-space-3 py-1 rounded text-label-sm font-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> Live
+      </div>
+</div>
+<!-- Inline SVG Chart -->
+<div class="w-full h-40 flex items-end relative pt-space-4">
+<!-- Grid lines -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-20">
+<div class="w-full h-px bg-outline"></div>
+<div class="w-full h-px bg-outline"></div>
+<div class="w-full h-px bg-outline"></div>
+<div class="w-full h-px bg-outline"></div>
+</div>
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 350 120">
+<defs>
+<lineargradient id="chartGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#b4c5ff" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#b4c5ff" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Area fill -->
+<path d="M0,90 Q50,60 100,75 T200,40 T300,20 T350,15 L350,120 L0,120 Z" fill="url(#chartGrad)"></path>
+<!-- Line -->
+<path d="M0,90 Q50,60 100,75 T200,40 T300,20 T350,15" fill="none" stroke="#b4c5ff" stroke-linecap="round" stroke-width="3"></path>
+<!-- Data points -->
+<circle class="fill-primary" cx="100" cy="75" r="4"></circle>
+<circle class="fill-primary" cx="200" cy="40" r="4"></circle>
+<circle class="fill-error animate-pulse" cx="300" cy="20" r="5"></circle>
+</svg>
+</div>
+<div class="flex justify-between text-label-sm font-label-sm text-outline">
+<span>00:00</span>
+<span>06:00</span>
+<span>12:00</span>
+<span>18:00</span>
+<span>Now</span>
+</div>
+</div>
+<!-- Congestion Heatmap Card -->
+<div class="bg-surface-container rounded-xl p-space-12 shadow-sm flex flex-col gap-space-6">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Congestion Heatmap</h3>
+<span class="text-label-sm font-label-sm text-outline">Real-time sector density map</span>
+</div>
+<span class="material-symbols-outlined text-outline">map</span>
+</div>
+<!-- Map Wrapper with data-location -->
+<div class="w-full h-56 bg-cover bg-center rounded-lg relative overflow-hidden flex flex-col justify-end p-space-6 shadow-inner" data-alt="A top-down aerial map visualization of a dense smart city grid with glowing holographic heat signatures in amber and red over major highway intersections and downtown avenues, night aesthetic, dark navy and vivid blue tones with high contrast UI overlays." data-location="Metropolitan Core Sector 7-G" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between">
+<div>
+<span class="text-label-sm font-label-sm text-error uppercase tracking-wider">High Congestion Alert</span>
+<div class="text-body-lg font-headline-sm text-on-surface">Ring Road &amp; 5th Avenue Junction</div>
+</div>
+<span class="bg-error text-on-error text-label-sm font-label-sm px-space-3 py-1 rounded-full font-headline-sm">Level 5</span>
+</div>
+</div>
+</div>
+<!-- Vehicle Type Distribution Card -->
+<div class="bg-surface-container rounded-xl p-space-12 shadow-sm flex flex-col gap-space-6">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Vehicle Composition</h3>
+<span class="text-label-sm font-label-sm text-outline">Classified sensor analytics</span>
+</div>
+<span class="material-symbols-outlined text-outline">donut_large</span>
+</div>
+<!-- Distribution Breakdown -->
+<div class="flex flex-col gap-space-4">
+<!-- Item 1 -->
+<div class="flex flex-col gap-space-2">
+<div class="flex justify-between text-body-md">
+<span class="flex items-center gap-space-2"><span class="w-3 h-3 rounded-full bg-primary inline-block"></span> Cars</span>
+<span class="text-label-md font-label-md text-on-surface">54% (766K)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-variant overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 54%;"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-space-2">
+<div class="flex justify-between text-body-md">
+<span class="flex items-center gap-space-2"><span class="w-3 h-3 rounded-full bg-secondary inline-block"></span> Motorcycles</span>
+<span class="text-label-md font-label-md text-on-surface">22% (312K)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-variant overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 22%;"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-space-2">
+<div class="flex justify-between text-body-md">
+<span class="flex items-center gap-space-2"><span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span> Auto-rickshaws</span>
+<span class="text-label-md font-label-md text-on-surface">12% (170K)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-variant overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 12%;"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col gap-space-2">
+<div class="flex justify-between text-body-md">
+<span class="flex items-center gap-space-2"><span class="w-3 h-3 rounded-full bg-surface-bright inline-block"></span> Buses</span>
+<span class="text-label-md font-label-md text-on-surface">7% (99K)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-variant overflow-hidden">
+<div class="bg-surface-bright h-full rounded-full" style="width: 7%;"></div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="flex flex-col gap-space-2">
+<div class="flex justify-between text-body-md">
+<span class="flex items-center gap-space-2"><span class="w-3 h-3 rounded-full bg-error inline-block"></span> Trucks</span>
+<span class="text-label-md font-label-md text-on-surface">5% (73K)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-variant overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 5%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Congestion by Road Table Card -->
+<div class="bg-surface-container rounded-xl p-space-12 shadow-sm flex flex-col gap-space-6">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Congestion by Road</h3>
+<span class="text-label-sm font-label-sm text-outline">Arterial road load ranking</span>
+</div>
+<span class="material-symbols-outlined text-outline">alt_route</span>
+</div>
+<div class="flex flex-col gap-space-4">
+<!-- Road Row -->
+<div class="flex items-center justify-between p-space-4 rounded-lg bg-surface-variant/40">
+<div class="flex flex-col">
+<span class="text-body-md font-headline-sm text-on-surface">Ring Road (North)</span>
+<span class="text-label-sm text-outline">Junction 12 to 18</span>
+</div>
+<div class="flex items-center gap-space-6">
+<div class="text-right">
+<div class="text-label-md font-label-md text-error">+24% Spike</div>
+<span class="text-label-sm text-outline">Delay: 11 min</span>
+</div>
+<span class="w-3 h-3 rounded-full bg-error"></span>
+</div>
+</div>
+<!-- Road Row -->
+<div class="flex items-center justify-between p-space-4 rounded-lg bg-surface-variant/40">
+<div class="flex flex-col">
+<span class="text-body-md font-headline-sm text-on-surface">Grand Trunk Blvd</span>
+<span class="text-label-sm text-outline">Central Plaza</span>
+</div>
+<div class="flex items-center gap-space-6">
+<div class="text-right">
+<div class="text-label-md font-label-md text-tertiary">+8% Normal</div>
+<span class="text-label-sm text-outline">Delay: 4 min</span>
+</div>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+</div>
+</div>
+<!-- Road Row -->
+<div class="flex items-center justify-between p-space-4 rounded-lg bg-surface-variant/40">
+<div class="flex flex-col">
+<span class="text-body-md font-headline-sm text-on-surface">Expressway Sector 4</span>
+<span class="text-label-sm text-outline">Tunnel Interchange</span>
+</div>
+<div class="flex items-center gap-space-6">
+<div class="text-right">
+<div class="text-label-md font-label-md text-primary">-3% Flowing</div>
+<span class="text-label-sm text-outline">Delay: 1 min</span>
+</div>
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Route Delay Comparison Card -->
+<div class="bg-surface-container rounded-xl p-space-12 shadow-sm flex flex-col gap-space-6">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Route Delay Comparison</h3>
+<span class="text-label-sm font-label-sm text-outline">Estimated vs Historical Baseline</span>
+</div>
+<span class="material-symbols-outlined text-outline">compare_arrows</span>
+</div>
+<div class="flex flex-col gap-space-6">
+<!-- Comparison Item -->
+<div class="flex flex-col gap-space-2">
+<div class="flex justify-between items-center text-body-md">
+<span class="text-on-surface font-headline-sm">Route 12 (Ring Rd)</span>
+<span class="text-label-md text-error">11.0m Est. (Avg: 4.5m)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-variant relative overflow-hidden">
+<div class="absolute top-0 left-0 bg-error h-full rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+<!-- Comparison Item -->
+<div class="flex flex-col gap-space-2">
+<div class="flex justify-between items-center text-body-md">
+<span class="text-on-surface font-headline-sm">Route 04 (Downtown)</span>
+<span class="text-label-md text-tertiary">6.2m Est. (Avg: 5.8m)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-variant relative overflow-hidden">
+<div class="absolute top-0 left-0 bg-tertiary h-full rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+<!-- Comparison Item -->
+<div class="flex flex-col gap-space-2">
+<div class="flex justify-between items-center text-body-md">
+<span class="text-on-surface font-headline-sm">Route 09 (Bypass)</span>
+<span class="text-label-md text-primary">3.1m Est. (Avg: 4.0m)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-variant relative overflow-hidden">
+<div class="absolute top-0 left-0 bg-primary h-full rounded-full" style="width: 30%;"></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function triggerSignalSync(btn) {
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> Synchronizing...';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span> Synced Successfully';
+        btn.classList.remove('bg-primary', 'hover:bg-surface-tint');
+        btn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+      }, 1200);
+    }
+  </script>
+</div></main></body></html>

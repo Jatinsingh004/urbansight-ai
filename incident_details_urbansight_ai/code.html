@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-tint": "#b4c5ff",
+          "inverse-on-surface": "#2e3132",
+          "surface-variant": "#323536",
+          "on-secondary-fixed-variant": "#3f465f",
+          "on-tertiary-container": "#eaf1ff",
+          "error": "#ffb4ab",
+          "secondary": "#bfc5e4",
+          "outline-variant": "#434655",
+          "surface-bright": "#373a3b",
+          "tertiary-container": "#646e7e",
+          "secondary-container": "#424862",
+          "on-primary-fixed-variant": "#003ea8",
+          "tertiary-fixed": "#d9e3f6",
+          "outline": "#8d90a0",
+          "on-tertiary-fixed": "#121c2a",
+          "surface-container-highest": "#323536",
+          "surface-container-lowest": "#0c0f10",
+          "on-surface-variant": "#c3c6d7",
+          "on-primary-fixed": "#00174b",
+          "inverse-surface": "#e1e3e4",
+          "surface-container-low": "#191c1d",
+          "tertiary": "#bdc7d9",
+          "on-secondary-fixed": "#141a32",
+          "secondary-fixed": "#dce1ff",
+          "surface-container": "#1d2021",
+          "primary-fixed": "#dbe1ff",
+          "primary-fixed-dim": "#b4c5ff",
+          "on-tertiary": "#27313f",
+          "on-error": "#690005",
+          "tertiary-fixed-dim": "#bdc7d9",
+          "on-surface": "#e1e3e4",
+          "on-error-container": "#ffdad6",
+          "surface": "#111415",
+          "on-tertiary-fixed-variant": "#3d4756",
+          "background": "#111415",
+          "error-container": "#93000a",
+          "on-secondary-container": "#b1b7d6",
+          "surface-container-high": "#282a2b",
+          "primary": "#b4c5ff",
+          "on-primary": "#002a78",
+          "secondary-fixed-dim": "#bfc5e4",
+          "on-primary-container": "#eeefff",
+          "surface-dim": "#111415",
+          "on-secondary": "#292f48",
+          "on-background": "#e1e3e4",
+          "inverse-primary": "#0053db",
+          "primary-container": "#2563eb"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-4": "0.5rem",
+          "grid-columns": "12",
+          "space-24": "3rem",
+          "space-2": "0.25rem",
+          "space-16": "2rem",
+          "space-6": "0.75rem",
+          "space-12": "1.5rem",
+          "gutter-default": "1rem",
+          "margin-default": "1.5rem",
+          "space-8": "1rem"
+        },
+        "fontFamily": {
+          "body-lg": ["Inter"],
+          "headline-lg": ["Inter"],
+          "body-sm": ["Inter"],
+          "body-md": ["Inter"],
+          "label-sm": ["JetBrains Mono"],
+          "label-md": ["JetBrains Mono"],
+          "headline-xl-mobile": ["Inter"],
+          "headline-md": ["Inter"],
+          "headline-sm": ["Inter"],
+          "label-lg": ["JetBrains Mono"],
+          "headline-xl": ["Inter"]
+        },
+        "fontSize": {
+          "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "label-lg": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-xl": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-space-gutter-default flex items-center justify-between"><div class="flex items-center gap-space-4"><button class="w-12 h-12 flex items-center justify-center text-on-surface" onclick="history.back()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button><h1 class="text-headline-sm font-headline-sm tracking-tight text-on-surface">Incident Detail</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-space-margin-default pt-16 bg-surface flex-grow"><div class="flex flex-col w-full pb-32">
+<!-- Status Banner & Alert ID -->
+<div class="flex items-center justify-between mb-space-4">
+<div class="flex items-center gap-space-2 bg-error-container text-on-error-container px-space-3 py-space-2 rounded-full">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="label-md font-label-md">INCIDENT #4920-B</span>
+</div>
+<span class="label-sm font-label-sm text-outline">10:42:20 UTC</span>
+</div>
+<!-- Evidence Visual Feed with AI Detection Overlay -->
+<div class="relative w-full h-72 rounded-xl overflow-hidden bg-surface-container shadow-xl mb-space-6">
+<div class="w-full h-full bg-cover bg-center" data-alt="High-contrast surveillance camera footage showing an urban intersection at twilight with heavy traffic. A white sedan is highlighted with a neon blue AI bounding box, license plate highlighted with high precision, digital telemetry overlays, and confidence meters in dark blue and bright accent tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3t--ZjTxNN-24waZA9tDal7uIEPaR_mhy8tmju0i5YRasxynRAq3-gm0OQ1AWe1UfSEio3_ltsHOnsnPvrMwIHcHFvDVjkaLHNMQwl80NWpQGi2gvE-4QEjmJJFsxNeojHka8pRiaHWCEVxz-wl4IX9LFKI5L-QhoGNVaQhlmjHSuDsRgaSiuxubuN4Wz-0bVHv-EWVgTY266n1drx1Do6vd74q5uAjpKcTUwpGIx3hKaMwv74Wf8GQ')"></div>
+<!-- AI Bounding Box Simulation -->
+<div class="absolute inset-x-12 inset-y-16 border-2 border-primary bg-primary/10 rounded-lg flex flex-col justify-between p-space-2 pointer-events-none">
+<div class="flex justify-between items-start">
+<span class="bg-primary text-on-primary label-sm font-label-sm px-space-2 py-0.5 rounded font-bold">VEHICLE // 94%</span>
+<span class="bg-surface-container/80 text-primary label-sm font-label-sm px-space-2 py-0.5 rounded">CAM-04</span>
+</div>
+<div class="self-start bg-surface/90 text-on-surface label-sm font-label-sm px-space-2 py-1 rounded backdrop-blur-md flex items-center gap-space-2">
+<span class="material-symbols-outlined text-[14px] text-primary">badge</span>
+<span>CG04AB1234 (91%)</span>
+</div>
+</div>
+<!-- Live indicator badge -->
+<div class="absolute top-space-4 left-space-4 bg-surface-container/80 backdrop-blur-md px-space-3 py-1 rounded-full flex items-center gap-space-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="label-sm font-label-sm text-on-surface">LIVE FEED</span>
+</div>
+</div>
+<!-- Evidence Timeline Slider / Selector -->
+<div class="mb-space-6 bg-surface-container-low p-space-4 rounded-xl">
+<div class="flex items-center justify-between mb-space-2">
+<span class="label-md font-label-md text-on-surface-variant flex items-center gap-space-2">
+<span class="material-symbols-outlined text-[16px]">history</span>
+        FRAME CAPTURES
+      </span>
+<span class="label-sm font-label-sm text-primary">3 Frames Recorded</span>
+</div>
+<div class="grid grid-cols-3 gap-space-2">
+<button class="bg-surface-container p-space-2 rounded-lg text-left hover:bg-surface-container-high transition-colors group">
+<div class="label-sm font-label-sm text-on-surface-variant mb-1">10:42:16</div>
+<div class="w-full h-12 bg-surface-container-lowest rounded overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center opacity-70 group-hover:opacity-100 transition-opacity" data-alt="First frame of white sedan approaching intersection" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQl_gZcL9ZVg1s90ZhzXmaEhKKdSZTf8ZwTMCTvfbi_T4ud8xG_eRiUNo2YSJlEFI0K9VmQ6f5WhP0kfNXECRRNwWMqRlTRqQBnRCG0hN5D_isQZ3ID0loqFJ42Z24xCVjuqFr_bjX7De8uaGAlsN53f9sWkF3BsqeFvAdGy_3s0Qf4qr_FIg6bSi8ffzVlxqS5HeJQnzXUZLJCMjzCuZwqcCXsJXbPx9feWxhM7-I7hSELewC1mWbPA')"></div>
+</div>
+</button>
+<button class="bg-surface-container p-space-2 rounded-lg text-left hover:bg-surface-container-high transition-colors group">
+<div class="label-sm font-label-sm text-on-surface-variant mb-1">10:42:18</div>
+<div class="w-full h-12 bg-surface-container-lowest rounded overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center opacity-70 group-hover:opacity-100 transition-opacity" data-alt="Second frame of white sedan passing camera" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtWCjmPBVgIwlhqZZkJYA4DGSxzmAeulN32iYGFI-DCB0dNaiIARNpIb1BZpACFh7yoHX9vDyHdVxEf2DxyDlZXM7dwAgW251JL2w5SRV2QbdenmHiL1fIXuR5lulu9gf6SRAvEnWcIwDOB0tbUtRFaZxzvy8Ks3qLDtFkV5CZcfghFjjGbvZhrZhAt9YxytF1PYXuSsGJjPuqicz2cZHtmQKh4yJEy308stJjrJ_icNiyutkqnorKtA')"></div>
+</div>
+</button>
+<button class="bg-primary text-on-primary p-space-2 rounded-lg text-left shadow-lg">
+<div class="label-sm font-label-sm text-on-primary-container mb-1">10:42:20 (Active)</div>
+<div class="w-full h-12 bg-primary-container rounded overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Third frame of white sedan exiting frame" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUjF0QCMmoo-WwTqncAk_FPVyt4DmMx3RNn8NBjPUfzdSIZnuOq_84pJBJo0XAQIst0rkyu2J4qC1kRmiNqEYIUbg78eFESEJ4RFTfZy8dLpAnP_gYwrQwFq_KbIIenTfcVw88uUG36Fvaee9jj6bA8o4zKtbcckeTaDoW0yDJSCiPmtZbcdWsGRTt5m9HFj6OxpVXJIAgC9biDCW-qzr2zuRtj0LnHwplE7s3mH0HXBK_prIdbvnJ6g')"></div>
+</div>
+</button>
+</div>
+</div>
+<!-- Information Cards Grid -->
+<div class="grid grid-cols-2 gap-space-4 mb-space-6">
+<!-- Target Vehicle Card -->
+<div class="bg-surface-container-low p-space-4 rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-2">
+<span class="label-sm font-label-sm text-on-surface-variant">OBJECT IDENTIFIED</span>
+<span class="material-symbols-outlined text-[18px] text-primary">directions_car</span>
+</div>
+<div>
+<div class="headline-sm font-headline-sm text-on-surface mb-1">White Sedan</div>
+<div class="label-md font-label-md text-primary font-bold">CG04AB1234</div>
+</div>
+<div class="mt-space-4 pt-space-2 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="label-sm font-label-sm text-outline">Confidence</span>
+<span class="label-sm font-label-sm text-surface-tint font-bold">91%</span>
+</div>
+</div>
+<!-- Detection Metrics Card -->
+<div class="bg-surface-container-low p-space-4 rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-2">
+<span class="label-sm font-label-sm text-on-surface-variant">AI TELEMETRY</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">analytics</span>
+</div>
+<div>
+<div class="headline-sm font-headline-sm text-on-surface mb-1">94% Confidence</div>
+<div class="label-md font-label-md text-secondary">Model: Vision-v4.2</div>
+</div>
+<div class="mt-space-4 pt-space-2 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="label-sm font-label-sm text-outline">Associated Bus</span>
+<span class="label-sm font-label-sm text-on-surface font-bold">BUS-204</span>
+</div>
+</div>
+</div>
+<!-- Secondary Information Stack -->
+<div class="bg-surface-container-low rounded-xl p-space-4 mb-space-6 space-y-space-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">videocam</span>
+</div>
+<div>
+<div class="label-lg font-label-lg text-on-surface">Front Camera Node 04</div>
+<div class="body-sm font-body-sm text-on-surface-variant">Sector 7 - Downtown Expressway</div>
+</div>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-space-3 py-1 rounded-full label-sm font-label-sm">ACTIVE</span>
+</div>
+<div class="pt-space-3 border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex items-center gap-space-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">pin_drop</span>
+</div>
+<div>
+<div class="label-lg font-label-lg text-on-surface">GPS Coordinates</div>
+<div class="body-sm font-body-sm text-on-surface-variant font-mono">28.6139° N, 77.2090° E</div>
+</div>
+</div>
+<span class="label-sm font-label-sm text-primary">Accuracy ±2m</span>
+</div>
+</div>
+<!-- Mini Map Preview -->
+<div class="mb-space-6">
+<div class="flex items-center justify-between mb-space-2">
+<span class="label-md font-label-md text-on-surface-variant flex items-center gap-space-2">
+<span class="material-symbols-outlined text-[16px]">map</span>
+        LAST KNOWN POSITION
+      </span>
+<span class="label-sm font-label-sm text-primary">Sector 7 Corridor</span>
+</div>
+<div class="w-full h-40 rounded-xl bg-cover bg-center shadow-inner relative overflow-hidden" data-location="New Delhi, Sector 7 Expressway" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClSvZSW73JZG0Zc_d1_4ktMzabuoIEyvINaLNtcpuvkGeodRMLli41Vr1BMxPLD3DUM50Vo3seyQBDEQ5uMXnzWDYUIg1ZZGO0NuXbLouGUw8quZR5V_2C4IvzgURHTpFnoVXU-MLWF2yQD1PSCbZ5-5nSnO5uWEbElevjZGxnq-XB2BVQmrHZR5FAswV5v84NBpEwJ35ITuhDoxuJ1k2QvphpvQ1iKPvo40b38KrhXTzGA17RPcNaXg')">
+<!-- Pulsing radar point on map -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative flex items-center justify-center">
+<div class="absolute w-12 h-12 bg-primary/30 rounded-full animate-ping"></div>
+<div class="w-4 h-4 bg-primary rounded-full shadow-lg border-2 border-surface"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 inset-x-0 p-space-4 bg-surface/90 backdrop-blur-xl z-40 border-t border-outline-variant/10">
+<div class="grid grid-cols-2 gap-space-3 max-w-lg mx-auto">
+<button class="bg-primary-container text-on-primary-container py-space-3 px-space-4 rounded-xl flex items-center justify-center gap-space-2 font-headline-sm text-headline-sm hover:bg-primary transition-colors active:scale-95 shadow-lg">
+<span class="material-symbols-outlined">radar</span>
+        Track Vehicle
+      </button>
+<button class="bg-surface-container-high text-on-surface py-space-3 px-space-4 rounded-xl flex items-center justify-center gap-space-2 font-headline-sm text-headline-sm hover:bg-surface-bright transition-colors active:scale-95">
+<span class="material-symbols-outlined">map</span>
+        View Map
+      </button>
+<button class="bg-surface-container-high text-on-surface py-space-3 px-space-4 rounded-xl flex items-center justify-center gap-space-2 font-headline-sm text-headline-sm hover:bg-surface-bright transition-colors active:scale-95">
+<span class="material-symbols-outlined">description</span>
+        Generate Report
+      </button>
+<button class="bg-surface-container-high text-on-surface py-space-3 px-space-4 rounded-xl flex items-center justify-center gap-space-2 font-headline-sm text-headline-sm hover:bg-surface-bright transition-colors active:scale-95">
+<span class="material-symbols-outlined">share</span>
+        Share Evidence
+      </button>
+</div>
+</div>
+</div></main></body></html>
