@@ -79,24 +79,24 @@ The current version focuses on the **UI/UX prototype** and frontend implementati
 
 ---
 ## 🛠️ Technology Stack
-Current
-React
-JavaScript
-Vite
-HTML5
-CSS
-Git & GitHub
-Planned
-Node.js
-Express.js
-PostgreSQL / MongoDB
-REST APIs
-Authentication
-AI/ML models
-Real-time data processing
-WebSockets
-GIS / Maps APIs
-Cloud deployment
+-Current
+-React
+-JavaScript
+-Vite
+-HTML5
+-CSS
+-Git & GitHub
+-Planned
+-Node.js
+-Express.js
+-PostgreSQL / MongoDB
+-REST APIs
+-Authentication
+-AI/ML models
+-Real-time data processing
+-WebSockets
+-GIS / Maps APIs
+-Cloud deployment
 
 ## 🏗️ Project Structure
 
