@@ -79,7 +79,7 @@ The current version focuses on the **UI/UX prototype** and frontend implementati
 
 ---
 ## 🛠️ Technology Stack
--Current
+- Current
 -React
 -JavaScript
 -Vite
@@ -97,6 +97,8 @@ The current version focuses on the **UI/UX prototype** and frontend implementati
 -WebSockets
 -GIS / Maps APIs
 -Cloud deployment
+
+---
 
 ## 🏗️ Project Structure
 
