@@ -78,6 +78,25 @@ The current version focuses on the **UI/UX prototype** and frontend implementati
 | Profile | User and system settings |
 
 ---
+## 🛠️ Technology Stack
+Current
+React
+JavaScript
+Vite
+HTML5
+CSS
+Git & GitHub
+Planned
+Node.js
+Express.js
+PostgreSQL / MongoDB
+REST APIs
+Authentication
+AI/ML models
+Real-time data processing
+WebSockets
+GIS / Maps APIs
+Cloud deployment
 
 ## 🏗️ Project Structure
 
@@ -100,22 +119,3 @@ urbanSight-ai/
 ├── .gitignore
 └── README.md
 
-🛠️ Technology Stack
-Current
-React
-JavaScript
-Vite
-HTML5
-CSS
-Git & GitHub
-Planned
-Node.js
-Express.js
-PostgreSQL / MongoDB
-REST APIs
-Authentication
-AI/ML models
-Real-time data processing
-WebSockets
-GIS / Maps APIs
-Cloud deployment
